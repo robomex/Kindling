@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE7EBB541AF5621800DFE445 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EBB531AF5621800DFE445 /* CardsViewController.swift */; };
 		DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA21ADF760500A7FAF5 /* AppDelegate.swift */; };
 		DE826EA51ADF760500A7FAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA41ADF760500A7FAF5 /* ViewController.swift */; };
 		DE826EA81ADF760500A7FAF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE826EA61ADF760500A7FAF5 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE7EBB531AF5621800DFE445 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		DE826E9D1ADF760500A7FAF5 /* Kindling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE826EA11ADF760500A7FAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE826EA21ADF760500A7FAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE7EBB521AF561C800DFE445 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE826EA41ADF760500A7FAF5 /* ViewController.swift */,
+				DE7EBB531AF5621800DFE445 /* CardsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		DE826E941ADF760500A7FAF5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +94,7 @@
 			children = (
 				DE826EA21ADF760500A7FAF5 /* AppDelegate.swift */,
 				DE826EC21ADF76A400A7FAF5 /* Views */,
-				DE826EA41ADF760500A7FAF5 /* ViewController.swift */,
+				DE7EBB521AF561C800DFE445 /* ViewControllers */,
 				DE826EA61ADF760500A7FAF5 /* Main.storyboard */,
 				DE826EA91ADF760500A7FAF5 /* Images.xcassets */,
 				DE826EAB1ADF760500A7FAF5 /* LaunchScreen.xib */,
@@ -228,6 +239,7 @@
 			files = (
 				DE826EA51ADF760500A7FAF5 /* ViewController.swift in Sources */,
 				DE826EC61ADF86DA00A7FAF5 /* SwipeView.swift in Sources */,
+				DE7EBB541AF5621800DFE445 /* CardsViewController.swift in Sources */,
 				DE826EC41ADF76EA00A7FAF5 /* CardView.swift in Sources */,
 				DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */,
 			);
@@ -423,6 +435,7 @@
 				DE826EBE1ADF760500A7FAF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE826EBF1ADF760500A7FAF5 /* Build configuration list for PBXNativeTarget "KindlingTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +444,7 @@
 				DE826EC11ADF760500A7FAF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

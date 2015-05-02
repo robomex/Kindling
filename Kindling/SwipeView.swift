@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 
 class SwipeView: UIView {
+    
     private let card: CardView = CardView()
+    
+    private var originalPoint: CGPoint?
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -26,9 +29,33 @@ class SwipeView: UIView {
         backgroundColor = UIColor.clearColor()
         addSubview(card)
         
-        card.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
         
+        card.setTranslatesAutoresizingMaskIntoConstraints(false)
         setConstraints()
+    }
+    
+    func dragged(gestureRecognizer: UIPanGestureRecognizer) {
+        let distance = gestureRecognizer.translationInView(self)
+        println("Distance x:\(distance.x) y:\(distance.y)")
+        
+        switch gestureRecognizer.state{
+        case UIGestureRecognizerState.Began:
+            originalPoint = center
+        case UIGestureRecognizerState.Changed:
+            center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
+        case UIGestureRecognizerState.Ended:
+            resetViewPositionAndTransformations()
+        default:
+            println("Default triggered for GestureRecognizer")
+            break
+        }
+    }
+    
+    private func resetViewPositionAndTransformations() {
+        UIView.animateWithDuration(0.2, animations: { () -> Void in
+            self.center = self.originalPoint!
+        })
     }
     
     private func setConstraints() {
