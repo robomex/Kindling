@@ -14,6 +14,7 @@
 		DE826EAD1ADF760500A7FAF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE826EAB1ADF760500A7FAF5 /* LaunchScreen.xib */; };
 		DE826EB91ADF760500A7FAF5 /* KindlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EB81ADF760500A7FAF5 /* KindlingTests.swift */; };
 		DE826EC41ADF76EA00A7FAF5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EC31ADF76EA00A7FAF5 /* CardView.swift */; };
+		DE826EC61ADF86DA00A7FAF5 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EC51ADF86DA00A7FAF5 /* SwipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		DE826EB71ADF760500A7FAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE826EB81ADF760500A7FAF5 /* KindlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlingTests.swift; sourceTree = "<group>"; };
 		DE826EC31ADF76EA00A7FAF5 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DE826EC51ADF86DA00A7FAF5 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				DE826EC31ADF76EA00A7FAF5 /* CardView.swift */,
+				DE826EC51ADF86DA00A7FAF5 /* SwipeView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE826EA51ADF760500A7FAF5 /* ViewController.swift in Sources */,
+				DE826EC61ADF86DA00A7FAF5 /* SwipeView.swift in Sources */,
 				DE826EC41ADF76EA00A7FAF5 /* CardView.swift in Sources */,
 				DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */,
 			);
