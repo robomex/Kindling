@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE189A331AF7185500C5615F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A311AF7185500C5615F /* Parse.framework */; };
+		6184F2110DBBAB39A10718C1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F822B601CC0423CFE7EBCF /* libPods.a */; };
 		DE189A351AF718A700C5615F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A341AF718A700C5615F /* AudioToolbox.framework */; };
 		DE189A431AF7192400C5615F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A371AF7192400C5615F /* CFNetwork.framework */; };
 		DE189A441AF7192400C5615F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A381AF7192400C5615F /* CoreGraphics.framework */; };
@@ -19,8 +19,8 @@
 		DE189A4A1AF7192400C5615F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A3E1AF7192400C5615F /* Security.framework */; };
 		DE189A4C1AF7192400C5615F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A401AF7192400C5615F /* StoreKit.framework */; };
 		DE189A4D1AF7192400C5615F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A411AF7192400C5615F /* SystemConfiguration.framework */; };
-		DE189A501AF9C2F000C5615F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A4E1AF9C2F000C5615F /* ParseFacebookUtils.framework */; };
-		DE189A511AF9C2F000C5615F /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A4F1AF9C2F000C5615F /* ParseFacebookUtilsV4.framework */; };
+		DE189A5C1AF9D7EF00C5615F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A591AF9D7EF00C5615F /* Parse.framework */; };
+		DE189A5D1AF9D7EF00C5615F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A5A1AF9D7EF00C5615F /* ParseFacebookUtils.framework */; };
 		DE7EBB541AF5621800DFE445 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EBB531AF5621800DFE445 /* CardsViewController.swift */; };
 		DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA21ADF760500A7FAF5 /* AppDelegate.swift */; };
 		DE826EA51ADF760500A7FAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA41ADF760500A7FAF5 /* ViewController.swift */; };
@@ -43,7 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE189A311AF7185500C5615F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		40F822B601CC0423CFE7EBCF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F9DA14340381E17B860A6B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CA8B3F7711B8A50317800F07 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DE189A341AF718A700C5615F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DE189A361AF7192400C5615F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		DE189A371AF7192400C5615F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -57,8 +59,9 @@
 		DE189A3F1AF7192400C5615F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		DE189A401AF7192400C5615F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DE189A411AF7192400C5615F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DE189A4E1AF9C2F000C5615F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		DE189A4F1AF9C2F000C5615F /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		DE189A521AF9C4B200C5615F /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		DE189A591AF9D7EF00C5615F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DE189A5A1AF9D7EF00C5615F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		DE7EBB531AF5621800DFE445 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		DE826E9D1ADF760500A7FAF5 /* Kindling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE826EA11ADF760500A7FAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,13 +89,13 @@
 				DE189A471AF7192400C5615F /* libz.dylib in Frameworks */,
 				DE189A481AF7192400C5615F /* MobileCoreServices.framework in Frameworks */,
 				DE189A491AF7192400C5615F /* QuartzCore.framework in Frameworks */,
-				DE189A501AF9C2F000C5615F /* ParseFacebookUtils.framework in Frameworks */,
 				DE189A4A1AF7192400C5615F /* Security.framework in Frameworks */,
-				DE189A511AF9C2F000C5615F /* ParseFacebookUtilsV4.framework in Frameworks */,
 				DE189A4C1AF7192400C5615F /* StoreKit.framework in Frameworks */,
 				DE189A4D1AF7192400C5615F /* SystemConfiguration.framework in Frameworks */,
+				DE189A5C1AF9D7EF00C5615F /* Parse.framework in Frameworks */,
 				DE189A351AF718A700C5615F /* AudioToolbox.framework in Frameworks */,
-				DE189A331AF7185500C5615F /* Parse.framework in Frameworks */,
+				DE189A5D1AF9D7EF00C5615F /* ParseFacebookUtils.framework in Frameworks */,
+				6184F2110DBBAB39A10718C1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,13 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7941A0E532EEDC2D9D0D10E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA8B3F7711B8A50317800F07 /* Pods.debug.xcconfig */,
+				91F9DA14340381E17B860A6B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DE189A2B1AF7181B00C5615F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE189A4E1AF9C2F000C5615F /* ParseFacebookUtils.framework */,
-				DE189A4F1AF9C2F000C5615F /* ParseFacebookUtilsV4.framework */,
 				DE189A361AF7192400C5615F /* Accounts.framework */,
 				DE189A371AF7192400C5615F /* CFNetwork.framework */,
+				DE189A591AF9D7EF00C5615F /* Parse.framework */,
+				DE189A5A1AF9D7EF00C5615F /* ParseFacebookUtils.framework */,
 				DE189A381AF7192400C5615F /* CoreGraphics.framework */,
 				DE189A391AF7192400C5615F /* CoreLocation.framework */,
 				DE189A3A1AF7192400C5615F /* libsqlite3.dylib */,
@@ -124,7 +136,7 @@
 				DE189A401AF7192400C5615F /* StoreKit.framework */,
 				DE189A411AF7192400C5615F /* SystemConfiguration.framework */,
 				DE189A341AF718A700C5615F /* AudioToolbox.framework */,
-				DE189A311AF7185500C5615F /* Parse.framework */,
+				40F822B601CC0423CFE7EBCF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,6 +157,7 @@
 				DE189A2B1AF7181B00C5615F /* Frameworks */,
 				DE826EB51ADF760500A7FAF5 /* KindlingTests */,
 				DE826E9E1ADF760500A7FAF5 /* Products */,
+				7941A0E532EEDC2D9D0D10E1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				DE826EA11ADF760500A7FAF5 /* Info.plist */,
+				DE189A521AF9C4B200C5615F /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE826EBC1ADF760500A7FAF5 /* Build configuration list for PBXNativeTarget "Kindling" */;
 			buildPhases = (
+				EF80E2EF0A2FC1C2C24F3695 /* Check Pods Manifest.lock */,
 				DE826E991ADF760500A7FAF5 /* Sources */,
 				DE826E9A1ADF760500A7FAF5 /* Frameworks */,
 				DE826E9B1ADF760500A7FAF5 /* Resources */,
+				C5CA4C732217D36A68038F77 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,6 +315,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5CA4C732217D36A68038F77 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF80E2EF0A2FC1C2C24F3695 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE826E991ADF760500A7FAF5 /* Sources */ = {
@@ -432,6 +481,7 @@
 		};
 		DE826EBD1ADF760500A7FAF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8B3F7711B8A50317800F07 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -442,11 +492,13 @@
 				INFOPLIST_FILE = Kindling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kindling/Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		DE826EBE1ADF760500A7FAF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F9DA14340381E17B860A6B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -457,6 +509,7 @@
 				INFOPLIST_FILE = Kindling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kindling/Bridging-Header.h";
 			};
 			name = Release;
 		};
