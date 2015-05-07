@@ -21,6 +21,7 @@
 		DE189A4D1AF7192400C5615F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A411AF7192400C5615F /* SystemConfiguration.framework */; };
 		DE189A5C1AF9D7EF00C5615F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A591AF9D7EF00C5615F /* Parse.framework */; };
 		DE189A5D1AF9D7EF00C5615F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A5A1AF9D7EF00C5615F /* ParseFacebookUtils.framework */; };
+		DE18DB4E1AFB1D300060EB21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB4D1AFB1D300060EB21 /* LoginViewController.swift */; };
 		DE7EBB541AF5621800DFE445 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EBB531AF5621800DFE445 /* CardsViewController.swift */; };
 		DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA21ADF760500A7FAF5 /* AppDelegate.swift */; };
 		DE826EA51ADF760500A7FAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA41ADF760500A7FAF5 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		DE189A521AF9C4B200C5615F /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DE189A591AF9D7EF00C5615F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DE189A5A1AF9D7EF00C5615F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		DE18DB4D1AFB1D300060EB21 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DE7EBB531AF5621800DFE445 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		DE826E9D1ADF760500A7FAF5 /* Kindling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE826EA11ADF760500A7FAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				DE826EA41ADF760500A7FAF5 /* ViewController.swift */,
+				DE18DB4D1AFB1D300060EB21 /* LoginViewController.swift */,
 				DE7EBB531AF5621800DFE445 /* CardsViewController.swift */,
 			);
 			name = ViewControllers;
@@ -354,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE18DB4E1AFB1D300060EB21 /* LoginViewController.swift in Sources */,
 				DE826EA51ADF760500A7FAF5 /* ViewController.swift in Sources */,
 				DE826EC61ADF86DA00A7FAF5 /* SwipeView.swift in Sources */,
 				DE7EBB541AF5621800DFE445 /* CardsViewController.swift in Sources */,
