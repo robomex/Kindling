@@ -24,7 +24,7 @@
         <!--Login View Controller-->
         <scene sceneID="qeE-pM-BSg">
             <objects>
-                <viewController id="S5v-mI-GjI" customClass="LoginViewController" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="S5v-mI-GjI" customClass="LoginViewController" customModule="Kindling" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hkz-0O-zED"/>
                         <viewControllerLayoutGuide type="bottom" id="Fh5-Dd-A9t"/>
@@ -93,7 +93,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1pR-0d-EHI">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BoP-Rl-Oto" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CardsNavController" automaticallyAdjustsScrollViewInsets="NO" id="BoP-Rl-Oto" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QEk-Wv-0f1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
