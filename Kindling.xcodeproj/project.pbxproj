@@ -22,6 +22,8 @@
 		DE189A5C1AF9D7EF00C5615F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A591AF9D7EF00C5615F /* Parse.framework */; };
 		DE189A5D1AF9D7EF00C5615F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE189A5A1AF9D7EF00C5615F /* ParseFacebookUtils.framework */; };
 		DE18DB4E1AFB1D300060EB21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB4D1AFB1D300060EB21 /* LoginViewController.swift */; };
+		DE18DB511AFDAD320060EB21 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB501AFDAD320060EB21 /* User.swift */; };
+		DE18DB531AFDAF5D0060EB21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB521AFDAF5D0060EB21 /* ProfileViewController.swift */; };
 		DE7EBB541AF5621800DFE445 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EBB531AF5621800DFE445 /* CardsViewController.swift */; };
 		DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA21ADF760500A7FAF5 /* AppDelegate.swift */; };
 		DE826EA51ADF760500A7FAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA41ADF760500A7FAF5 /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 		DE189A591AF9D7EF00C5615F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DE189A5A1AF9D7EF00C5615F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		DE18DB4D1AFB1D300060EB21 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DE18DB501AFDAD320060EB21 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DE18DB521AFDAF5D0060EB21 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DE7EBB531AF5621800DFE445 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		DE826E9D1ADF760500A7FAF5 /* Kindling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE826EA11ADF760500A7FAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,12 +147,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE18DB4F1AFDAD140060EB21 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DE18DB501AFDAD320060EB21 /* User.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		DE7EBB521AF561C800DFE445 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				DE826EA41ADF760500A7FAF5 /* ViewController.swift */,
 				DE18DB4D1AFB1D300060EB21 /* LoginViewController.swift */,
 				DE7EBB531AF5621800DFE445 /* CardsViewController.swift */,
+				DE18DB521AFDAF5D0060EB21 /* ProfileViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -177,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				DE826EA21ADF760500A7FAF5 /* AppDelegate.swift */,
+				DE18DB4F1AFDAD140060EB21 /* Data */,
 				DE826EC21ADF76A400A7FAF5 /* Views */,
 				DE7EBB521AF561C800DFE445 /* ViewControllers */,
 				DE826EA61ADF760500A7FAF5 /* Main.storyboard */,
@@ -363,6 +377,8 @@
 				DE7EBB541AF5621800DFE445 /* CardsViewController.swift in Sources */,
 				DE826EC41ADF76EA00A7FAF5 /* CardView.swift in Sources */,
 				DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */,
+				DE18DB531AFDAF5D0060EB21 /* ProfileViewController.swift in Sources */,
+				DE18DB511AFDAD320060EB21 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
