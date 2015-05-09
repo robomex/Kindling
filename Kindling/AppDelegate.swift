@@ -26,7 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var initialViewController: UIViewController
         
         if currentUser() != nil {
-            initialViewController = storyboard.instantiateViewControllerWithIdentifier("PageController") as! UIViewController
+            
+            initialViewController = ViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
+            
+//            below is replaced with line immediately above for initializing view controller via code vs from storyboard
+//            initialViewController = storyboard.instantiateViewControllerWithIdentifier("PageController") as! UIViewController
         } else {
             initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as! UIViewController
         }
