@@ -37,6 +37,8 @@ func currentUser() -> User? {
 
 func fetchUnviewedUsers(callback: ([User]) -> ()) {
     
+    
+    
     PFUser.query()!
     .whereKey("objectId", notEqualTo: PFUser.currentUser()!.objectId!)
     .findObjectsInBackgroundWithBlock({
@@ -54,4 +56,12 @@ func saveSkip(user: User) {
     skip.setObject(user.id, forKey: "toUser")
     skip.setObject("skipped", forKey: "type")
     skip.saveInBackgroundWithBlock(nil)
+}
+
+func saveLike(user: User) {
+    let like = PFObject(className: "Action")
+    like.setObject(PFUser.currentUser()!.objectId!, forKey: "byUser")
+    like.setObject(user.id, forKey: "toUser")
+    like.setObject("liked", forKey: "type")
+    like.saveInBackgroundWithBlock(nil)
 }
