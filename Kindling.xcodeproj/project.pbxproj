@@ -24,6 +24,9 @@
 		DE18DB4E1AFB1D300060EB21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB4D1AFB1D300060EB21 /* LoginViewController.swift */; };
 		DE18DB511AFDAD320060EB21 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB501AFDAD320060EB21 /* User.swift */; };
 		DE18DB531AFDAF5D0060EB21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB521AFDAF5D0060EB21 /* ProfileViewController.swift */; };
+		DE18DB551AFF1A630060EB21 /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB541AFF1A630060EB21 /* MatchesTableViewController.swift */; };
+		DE18DB571AFF1B1B0060EB21 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB561AFF1B1B0060EB21 /* UserCell.swift */; };
+		DE18DB591AFF26950060EB21 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18DB581AFF26950060EB21 /* Match.swift */; };
 		DE7EBB541AF5621800DFE445 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EBB531AF5621800DFE445 /* CardsViewController.swift */; };
 		DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA21ADF760500A7FAF5 /* AppDelegate.swift */; };
 		DE826EA51ADF760500A7FAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EA41ADF760500A7FAF5 /* ViewController.swift */; };
@@ -68,6 +71,9 @@
 		DE18DB4D1AFB1D300060EB21 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DE18DB501AFDAD320060EB21 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE18DB521AFDAF5D0060EB21 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DE18DB541AFF1A630060EB21 /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
+		DE18DB561AFF1B1B0060EB21 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		DE18DB581AFF26950060EB21 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		DE7EBB531AF5621800DFE445 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		DE826E9D1ADF760500A7FAF5 /* Kindling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE826EA11ADF760500A7FAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				DE18DB501AFDAD320060EB21 /* User.swift */,
+				DE18DB581AFF26950060EB21 /* Match.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 				DE18DB4D1AFB1D300060EB21 /* LoginViewController.swift */,
 				DE7EBB531AF5621800DFE445 /* CardsViewController.swift */,
 				DE18DB521AFDAF5D0060EB21 /* ProfileViewController.swift */,
+				DE18DB541AFF1A630060EB21 /* MatchesTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 			children = (
 				DE826EC31ADF76EA00A7FAF5 /* CardView.swift */,
 				DE826EC51ADF86DA00A7FAF5 /* SwipeView.swift */,
+				DE18DB561AFF1B1B0060EB21 /* UserCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -373,11 +382,14 @@
 			files = (
 				DE18DB4E1AFB1D300060EB21 /* LoginViewController.swift in Sources */,
 				DE826EA51ADF760500A7FAF5 /* ViewController.swift in Sources */,
+				DE18DB551AFF1A630060EB21 /* MatchesTableViewController.swift in Sources */,
 				DE826EC61ADF86DA00A7FAF5 /* SwipeView.swift in Sources */,
 				DE7EBB541AF5621800DFE445 /* CardsViewController.swift in Sources */,
 				DE826EC41ADF76EA00A7FAF5 /* CardView.swift in Sources */,
 				DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */,
 				DE18DB531AFDAF5D0060EB21 /* ProfileViewController.swift in Sources */,
+				DE18DB591AFF26950060EB21 /* Match.swift in Sources */,
+				DE18DB571AFF1B1B0060EB21 /* UserCell.swift in Sources */,
 				DE18DB511AFDAD320060EB21 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

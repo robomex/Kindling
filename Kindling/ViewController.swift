@@ -16,6 +16,8 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     
     let profileVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ProfileNavController") as! UIViewController
     
+    let matchesVC: UIViewController! = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MatchesNavController") as! UIViewController
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -47,6 +49,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
         switch viewController {
         case cardsVC: return profileVC
         case profileVC: return nil
+        case matchesVC: return cardsVC
         default: return nil
         }
     }
@@ -54,7 +57,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
         switch viewController {
-        case cardsVC: return nil
+        case cardsVC: return matchesVC
         case profileVC: return cardsVC
         default: return nil
         }
