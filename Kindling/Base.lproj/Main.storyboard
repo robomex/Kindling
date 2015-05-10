@@ -75,16 +75,49 @@
                                     <constraint firstAttribute="height" constant="320" id="lKT-8m-eGV"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seh-xF-Izs">
+                                <rect key="frame" x="170" y="505" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Sys-1D-5ME"/>
+                                    <constraint firstAttribute="width" constant="75" id="sRi-fg-o0E"/>
+                                </constraints>
+                                <state key="normal" image="nah-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nahButtonPressed:" destination="1G9-m3-gax" eventType="touchUpInside" id="oaM-bd-zFQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1e-zV-vh4">
+                                <rect key="frame" x="355" y="505" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="5uX-lr-neO"/>
+                                    <constraint firstAttribute="height" constant="75" id="qGb-4l-ksL"/>
+                                </constraints>
+                                <state key="normal" image="yeah-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yeahButtonPressed:" destination="1G9-m3-gax" eventType="touchUpInside" id="33n-Bp-SqN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="le2-PE-RZ9" firstAttribute="top" secondItem="seh-xF-Izs" secondAttribute="bottom" constant="20" id="1qh-el-El5"/>
                             <constraint firstAttribute="centerX" secondItem="3FJ-Df-7km" secondAttribute="centerX" id="45E-QT-lua"/>
                             <constraint firstItem="3FJ-Df-7km" firstAttribute="top" secondItem="fsH-8g-Mvt" secondAttribute="bottom" constant="10" id="7vm-3L-LIP"/>
+                            <constraint firstItem="b1e-zV-vh4" firstAttribute="leading" secondItem="seh-xF-Izs" secondAttribute="trailing" constant="110" id="9Y8-b9-j3c"/>
+                            <constraint firstItem="le2-PE-RZ9" firstAttribute="top" secondItem="b1e-zV-vh4" secondAttribute="bottom" constant="20" id="Olf-jF-PVb"/>
+                            <constraint firstAttribute="centerX" secondItem="seh-xF-Izs" secondAttribute="centerX" constant="92.5" id="Xap-Ou-CfN"/>
+                            <constraint firstAttribute="centerX" secondItem="b1e-zV-vh4" secondAttribute="centerX" constant="-92.5" id="tEU-rk-NLF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wDc-so-RM3"/>
                     <connections>
                         <outlet property="cardStackView" destination="3FJ-Df-7km" id="0sz-an-9yX"/>
+                        <outlet property="nahButton" destination="seh-xF-Izs" id="DbN-22-nOf"/>
+                        <outlet property="yeahButton" destination="b1e-zV-vh4" id="IAk-SK-Wwk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stG-e3-PXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -171,4 +204,8 @@
             <point key="canvasLocation" x="-129" y="1769"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nah-button" width="75" height="75"/>
+        <image name="yeah-button" width="75" height="75"/>
+    </resources>
 </document>
