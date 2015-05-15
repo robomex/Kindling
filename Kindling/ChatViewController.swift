@@ -12,6 +12,8 @@ class ChatViewController: JSQMessagesViewController {
     
     var messages: [JSQMessage] = []
     
+    var matchID: String?
+    
     let outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleBlueColor())
     let incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleLightGrayColor())
     
@@ -24,6 +26,17 @@ class ChatViewController: JSQMessagesViewController {
         
         collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero
         collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero
+        
+        if let id = matchID {
+            fetchMessages(id, {
+                messages in
+                
+                for m in messages {
+                    self.messages.append(JSQMessage(senderId: m.senderID, senderDisplayName: m.senderID, date: m.date, text: m.message))
+                }
+                self.finishReceivingMessage()
+            })
+        }
     }
     
     func sendersDisplayName() -> String! {
@@ -60,6 +73,9 @@ class ChatViewController: JSQMessagesViewController {
         let m = JSQMessage(senderId: senderId, senderDisplayName: senderDisplayName, date: date, text: text)
         
         self.messages.append(m)
+        if let id = matchID {
+            saveMessage(id, Message(message: text, senderID: senderId, date: date))
+        }
         
         finishSendingMessage()
     }
