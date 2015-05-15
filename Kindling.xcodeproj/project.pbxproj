@@ -37,6 +37,9 @@
 		DE826EB91ADF760500A7FAF5 /* KindlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EB81ADF760500A7FAF5 /* KindlingTests.swift */; };
 		DE826EC41ADF76EA00A7FAF5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EC31ADF76EA00A7FAF5 /* CardView.swift */; };
 		DE826EC61ADF86DA00A7FAF5 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE826EC51ADF86DA00A7FAF5 /* SwipeView.swift */; };
+		DED758CC1B05A0A8000293ED /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DED758CB1B05A0A8000293ED /* libicucore.dylib */; };
+		DED758CE1B05A0B7000293ED /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DED758CD1B05A0B7000293ED /* libc++.dylib */; };
+		DED758D01B05A0EA000293ED /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED758CF1B05A0EA000293ED /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		DE826EB81ADF760500A7FAF5 /* KindlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlingTests.swift; sourceTree = "<group>"; };
 		DE826EC31ADF76EA00A7FAF5 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DE826EC51ADF86DA00A7FAF5 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		DED758CB1B05A0A8000293ED /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		DED758CD1B05A0B7000293ED /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		DED758CF1B05A0EA000293ED /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED758CE1B05A0B7000293ED /* libc++.dylib in Frameworks */,
+				DED758CC1B05A0A8000293ED /* libicucore.dylib in Frameworks */,
 				DE189A431AF7192400C5615F /* CFNetwork.framework in Frameworks */,
 				DE189A441AF7192400C5615F /* CoreGraphics.framework in Frameworks */,
 				DE189A451AF7192400C5615F /* CoreLocation.framework in Frameworks */,
@@ -135,6 +143,8 @@
 		DE189A2B1AF7181B00C5615F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DED758CD1B05A0B7000293ED /* libc++.dylib */,
+				DED758CB1B05A0A8000293ED /* libicucore.dylib */,
 				DE189A361AF7192400C5615F /* Accounts.framework */,
 				DE189A371AF7192400C5615F /* CFNetwork.framework */,
 				DE189A591AF9D7EF00C5615F /* Parse.framework */,
@@ -160,6 +170,7 @@
 			children = (
 				DE18DB501AFDAD320060EB21 /* User.swift */,
 				DE18DB581AFF26950060EB21 /* Match.swift */,
+				DED758CF1B05A0EA000293ED /* Message.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -392,6 +403,7 @@
 				DE826EA31ADF760500A7FAF5 /* AppDelegate.swift in Sources */,
 				DE18DB531AFDAF5D0060EB21 /* ProfileViewController.swift in Sources */,
 				DE18DB591AFF26950060EB21 /* Match.swift in Sources */,
+				DED758D01B05A0EA000293ED /* Message.swift in Sources */,
 				DE18DB571AFF1B1B0060EB21 /* UserCell.swift in Sources */,
 				DE787E751B01A83000C0DD59 /* ChatViewController.swift in Sources */,
 				DE18DB511AFDAD320060EB21 /* User.swift in Sources */,
